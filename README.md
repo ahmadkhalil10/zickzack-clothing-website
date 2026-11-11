@@ -66,3 +66,22 @@ Screenshots of the website pages will be added here.
 Ahmad Ali Khalil
 
 CSCI426 – Advanced Web Programming
+## 5. Project Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### About Page
+![About Page](screenshots/aboutt.png)
+
+### Shop Page
+![Shop Page](screenshots/shopp.png)
+
+### Customize Page
+![Customize Page](screenshots/customizee.png)
+
+### Contact Page
+![Contact Page](screenshots/contact.png)
+
+### Cart Page
+![Cart Page](screenshots/cart.png)
