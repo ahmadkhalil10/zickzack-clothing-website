@@ -1,0 +1,264 @@
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+  width: 100%;
+  background: #090909;
+  color: #fff;
+  overflow: hidden;
+  border: 1px solid #292929;
+  box-sizing: border-box;
+}
+
+/* =========================
+   ABOUT HERO
+========================= */
+
+.about-hero {
+  width: 100%;
+  min-height: 400px;
+  padding: 55px 6%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+
+  border-bottom: 1px solid #333;
+}
+
+.about-hero-copy {
+  max-width: 480px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero h1 {
+  color: #fff;
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: clamp(65px, 7vw, 88px);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.05;
+  margin: 0 0 22px;
+}
+
+.about-hero h1 span {
+  color: #f5d400;
+}
+
+.about-hero p {
+  color: #fff;
+  font-size: 19px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* =========================
+   MISSION SECTION
+========================= */
+
+.mission-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: center;
+  gap: 40px;
+
+  padding: 40px 5%;
+  border-bottom: 1px solid #292929;
+}
+
+.mission-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid #333;
+}
+
+.mission-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mission-copy h2 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 0 0 18px;
+}
+
+.mission-copy p {
+  color: #e5e5e5;
+  font-size: 19px;
+  line-height: 1.55;
+  max-width: 650px;
+  margin: 0;
+}
+
+/* =========================
+   VALUES SECTION
+========================= */
+
+.values-section {
+  padding: 25px 5% 55px;
+}
+
+.values-section > h2 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 0 0 30px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.value-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 15px 20px;
+  border-right: 2px solid #444;
+}
+
+.value-card:last-child {
+  border-right: none;
+}
+
+/* SVG SYMBOLS */
+
+.value-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 12px;
+
+  fill: none;
+  stroke: #f5d400;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.lightning-icon {
+  fill: #f5d400;
+  stroke: #f5d400;
+}
+
+.people-icon {
+  stroke: #fff;
+  stroke-width: 2.5;
+}
+
+.value-card h3 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0 0 12px;
+}
+
+.value-card p {
+  color: #ddd;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 800px) {
+
+  .about-hero {
+    min-height: 350px;
+    padding: 40px 5%;
+    background-position: 60% center;
+  }
+
+  .about-hero h1 {
+    font-size: 65px;
+  }
+
+  .mission-section {
+    grid-template-columns: 220px 1fr;
+    gap: 25px;
+    padding: 30px 4%;
+  }
+
+  .mission-image {
+    height: 170px;
+  }
+
+  .mission-copy h2 {
+    font-size: 28px;
+  }
+
+  .mission-copy p {
+    font-size: 15px;
+  }
+
+  .value-card h3 {
+    font-size: 20px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 550px) {
+
+  .about-hero {
+    min-height: 340px;
+    padding: 40px 5%;
+    background-position: 62% center;
+  }
+
+  .about-hero h1 {
+    font-size: 55px;
+  }
+
+  .about-hero p {
+    font-size: 15px;
+  }
+
+  .mission-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .mission-image {
+    height: 220px;
+  }
+
+  .mission-copy h2 {
+    font-size: 28px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .value-card {
+    border-right: none;
+    border-bottom: 1px solid #444;
+    padding: 20px 10px;
+  }
+
+  .value-card:last-child {
+    border-bottom: none;
+  }
+}

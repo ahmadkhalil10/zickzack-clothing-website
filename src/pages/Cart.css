@@ -1,0 +1,168 @@
+.cart-page {
+  background: #111;
+  color: white;
+  min-height: 450px;
+  padding: 40px 7%;
+}
+
+.cart-heading {
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.cart-heading h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.cart-heading h1 span {
+  color: #f5d000;
+}
+
+.cart-heading p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* EMPTY CART */
+
+.empty-cart {
+  text-align: center;
+  padding: 45px 20px 55px;
+}
+
+.empty-cart-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.empty-cart h2 {
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+.empty-cart p {
+  color: #aaa;
+  margin: 12px 0 25px;
+}
+
+.continue-shopping {
+  display: inline-block;
+  background: #f5d000;
+  color: #111;
+  padding: 13px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.continue-shopping:hover {
+  background: white;
+}
+
+/* PRODUCTS */
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 18px;
+  border-bottom: 1px solid #333;
+}
+
+.cart-row img {
+  width: 110px;
+  height: 120px;
+  object-fit: contain;
+  background: #1c1c1c;
+  border-radius: 5px;
+}
+
+.cart-product-info {
+  flex: 1;
+}
+
+.cart-product-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cart-product-info p {
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.cart-product-info strong {
+  display: block;
+  color: #f5d000;
+  margin-top: 10px;
+}
+
+.remove-button {
+  background: transparent;
+  color: #aaa;
+  border: 1px solid #555;
+  padding: 9px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-button:hover {
+  color: #f5d000;
+  border-color: #f5d000;
+}
+
+/* TOTAL */
+
+.cart-total {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #444;
+  margin-top: 25px;
+  padding-top: 20px;
+}
+
+.cart-total h2 {
+  font-size: 22px;
+}
+
+.cart-total span {
+  color: #f5d000;
+  margin-left: 10px;
+}
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+  .cart-page {
+    padding: 30px 5%;
+  }
+
+  .cart-row {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .cart-row img {
+    width: 85px;
+    height: 100px;
+  }
+
+  .cart-product-info h3 {
+    font-size: 15px;
+  }
+
+  .remove-button {
+    margin-left: auto;
+  }
+}
